@@ -1,0 +1,162 @@
+.home {
+
+
+    .hero {
+        &__left {}
+
+        &__right {}
+
+
+    }
+
+    .service {
+        margin-bottom: 100px;
+
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+
+        }
+
+        &__title {
+            margin-bottom: 50px;
+            display: flex;
+
+            h2 {
+                background-color: #B9FF66;
+                width: fit-content;
+                font-family: "Space Grotesk", serif;
+            }
+
+            p {
+                font-family: "Space Grotesk", serif;
+                font-weight: lighter;
+                font-size: 16px;
+                width: 40%;
+                margin-left: 30px;
+
+            }
+        }
+
+        &__card {
+            display: flex;
+            justify-content: center;
+            width: calc(45% - 20px);
+            border-radius: 25px;
+            border: 1px solid black;
+            padding: 20px;
+            background-color: #F3F3F3;
+            max-width: 560px;
+
+            box-shadow: 0px 10px 13px -7px #000000, 1px 5px 17px 7px rgba(0, 0, 0, 0);
+
+            h3 {
+                font-family: "Space Grotesk", serif;
+                font-weight: 600;
+                background-color: #B9FF66;
+                width: fit-content;
+                font-size: 30px;
+                margin-right: 20px;
+            }
+        }
+
+        &__card_left {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            a {
+                text-decoration: none;
+                font-family: "Space Grotesk", serif;
+                ;
+            }
+        }
+
+        &__card_right {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            img {
+                display: block;
+                margin: auto auto;
+
+            }
+        }
+
+    }
+
+    .marketing {
+        &__card {
+            display: flex;
+            padding: 30px;
+            background-color: #F3F3F3;
+            border-radius: 30px;
+        }
+
+        &__card_left {
+            width: 50%;
+
+            h3 {
+                font-family: "Space Grotesk", serif;
+                font-size: 26px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                font-size: 20px;
+                margin-bottom: 50px;
+            }
+        }
+
+        &__card_right {
+            position: relative;
+            width: 50%;
+
+            img {
+                position: absolute;
+                display: block;
+                right:50px
+            }
+        }
+    }
+
+    .working{
+        &__top{
+            display: flex;
+            h2{
+                font-size: 40px;
+                font-family: "Space Grotesk", serif;
+                background-color: #B9FF66;
+            }
+            p{
+                font-family: "Space Grotesk", serif;
+                font-size: 24px;
+                margin: 0 auto;
+                width: 40%;
+            }
+
+        }
+
+        &__card{
+            border-radius: 30px;
+            border: 1px solid black;
+            padding: 20px;
+
+        }
+        &__card_header{
+            border-bottom: 1px solid black;
+        }
+.bar{
+    width: 10px;
+    height: 3px;
+    background-color: #000000;
+}
+
+    }
+
+}

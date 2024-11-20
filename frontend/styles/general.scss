@@ -1,0 +1,22 @@
+.container{
+position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    @media (max-width:$tablet-h) {
+        max-width: 1000px;
+        
+    }
+    @media (max-width:$tablet-v) {
+        max-width: 720px;
+        
+    }
+
+    @media(max-width:$mobile){
+        max-width: 600px;
+    }
+
+    @media(max-width:$mobile-m){
+        max-width: 440px;
+    }
+
+}

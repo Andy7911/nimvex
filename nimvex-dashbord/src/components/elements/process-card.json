@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_elements_process_cards",
+  "info": {
+    "displayName": "ProcessCard"
+  },
+  "options": {},
+  "attributes": {
+    "Headline": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}

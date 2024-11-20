@@ -1,0 +1,42 @@
+@mixin btn($bg-color, $text-color, $padding: 10px, $border-radius: 5px,$font-size:25px) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding;
+  border-radius: $border-radius;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: $font-size;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
+
+@mixin btn-with-icon($bg-color, $text-color, $icon-spacing,$font-size) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+  @include btn($bg-color, $text-color, $padding: 10px, $border-radius: 5px, $font-size:18px);
+
+  .icon {
+    margin-right: $icon-spacing;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+
+}
+
+.primary-btn {
+  @include btn(#000000, #fff); // Bouton avec des couleurs spécifiques
+}
+
+.secondary-btn {
+  @include btn(#6c757d, #fff); // Un autre bouton avec des couleurs différentes
+}
+
+.icon-btn {
+  @include btn-with-icon(transparent,#000000, 20px,18px)
+}

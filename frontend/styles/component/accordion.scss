@@ -1,0 +1,70 @@
+.accordion {
+    transition: 0.5s ease all;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 50px;
+    margin-bottom: 50px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            font-size: 40px;
+            font-family: "Space Grotesk", serif;
+        }
+    }
+
+    &__button {
+        position: relative;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: #F3F3F3;
+
+
+    }
+    &__content{
+        border-top: 1px solid black;
+        p{
+            font-size: 18px;
+            font-family: "Space Grotesk", serif;
+        }
+    }
+
+    &__bar {
+        position: absolute;
+        background-color: #000;
+        width: 30px;
+        height: 3px;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        &:last-child {
+            position: absolute;
+            transition: 0.5s ease ;
+            left: 20%;
+            transform: rotate(90deg) translate(0%, 0%);
+
+        }
+    }
+
+
+
+}
+
+.accordion.active{
+    background-color: #B9FF66;
+    transition: 0.5s ease all;
+    .accordion__button{
+        .accordion__bar{
+            &:last-child {
+              
+                transition: 0.5s ease ;
+                transform: rotate(0deg) translate(0%, 0%);
+    
+            }
+        }
+    }
+}

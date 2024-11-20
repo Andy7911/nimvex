@@ -1,0 +1,28 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        width: 45%;
+    }
+    
+    h1{
+        font-size: 60px;
+        font-family: "Space Grotesk", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+    }
+    p{
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+
+    &__right {
+        width: 45%;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

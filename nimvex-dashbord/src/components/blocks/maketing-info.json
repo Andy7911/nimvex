@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_blocks_maketing_infos",
+  "info": {
+    "displayName": "MaketingInfo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Headline": {
+      "type": "string"
+    },
+    "Paragraphe": {
+      "type": "text"
+    },
+    "Btn": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.button-link"
+    },
+    "Color": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    }
+  }
+}

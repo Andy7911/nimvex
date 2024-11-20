@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_elements_button_icons",
+  "info": {
+    "displayName": "ButtonIcon"
+  },
+  "options": {},
+  "attributes": {
+    "TextButton": {
+      "type": "string"
+    },
+    "Icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Url": {
+      "type": "string"
+    }
+  }
+}
