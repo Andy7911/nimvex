@@ -1,4 +1,4 @@
-import Layout from '../components/layout';
+import Layout from '../src/app/layout';
 import { LoaderProvider } from '../components/templates/LoaderProvider';
 function MyApp({ Component, pageProps }) {
   return (

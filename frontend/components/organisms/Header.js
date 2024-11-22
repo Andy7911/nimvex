@@ -1,6 +1,7 @@
-'use client'
+
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import Link from "next/link";
 import "../../styles/global.scss"
 import React from 'react'
 import img from '../../public/img/logo.png'
@@ -80,7 +81,7 @@ export default function Nav() {
           <li><a href='#'>Use Cases</a></li>
           <li><a href='#'>Pricing</a></li>
           <li><a href='#'>Blog</a></li>
-          <li><a href='/equipe'> Equipe </a> </li>
+          <li><Link href='/equipe'> Equipe </Link> </li>
         </ul>
 
         <div className="nav__lang">
