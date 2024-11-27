@@ -1,6 +1,6 @@
 import React,{CSSProperties} from 'react'
 import { ClockLoader} from 'react-spinners'
-import bonjour from '../../public/img/bonjour.gif'
+import bonjour from '../../../public/img/bonjour.gif'
 import Image from 'next/image'
 import gsap from 'gsap';
 

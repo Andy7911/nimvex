@@ -10,10 +10,19 @@ const response = await fetch(`${api_url}/api/home-page?populate[Hero][populate]=
         
     }
 })
-
-const data = response.json();
+if(!response.ok){
+    throw new Error(" failed database")
+    
+}
+const data = await response.json();
+console.log(data)
 await new Promise((resolve) => setTimeout(resolve, 4000));
-return data
+return {
+    hero:data.data['Hero'],
+    services:data.data['Services'],
+    marketing:data.data['MarketingInfo'],
+    processes:data.data['ProcessCard']
+}
 
 }
 

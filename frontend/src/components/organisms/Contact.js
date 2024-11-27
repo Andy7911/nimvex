@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import emailJS from 'emailjs-com'
 import Image from 'next/image';
-import imgContact from '../../public/img/contact-img.png';
+import imgContact from '../../../public/img/contact-img.png';
 export default function Contact() {
 
   const form = useRef();

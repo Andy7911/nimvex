@@ -1,4 +1,3 @@
-import React,{useEffect,useState} from 'react'
 
 
 
@@ -7,11 +6,6 @@ export default function Footer()
 
 {
 
-    useEffect(()=>{
-
-
-
-    },[])
 
   return (
     <div className='footer'>

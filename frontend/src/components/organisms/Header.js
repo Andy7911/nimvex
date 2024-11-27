@@ -1,26 +1,26 @@
 
+'use client';
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from "next/link";
 import "../../styles/global.scss"
 import React from 'react'
-import img from '../../public/img/logo.png'
-import handPhone from '../../public/img/workplace-mobile-app-hands.jpg'
-import WebClient from '../../public/img/webClient.jpg'
-import seoPhoto from '../../public/img/seo.jpeg'
+import img from '../../../public/img/logo.png'
+
+import handPhone from '../../../public/img/workplace-mobile-app-hands.jpg'
+import WebClient from '../../../public/img/webClient.jpg'
+import seoPhoto from '../../../public/img/seo.jpeg'
 import { useRouter } from "next/router";
-import franceFlag from "../../public/img/france.png"
-import London from "../../public/img/united-kingdom-flag.png"
+import franceFlag from "../../../public/img/france.png"
+import London from "../../../public/img/united-kingdom-flag.png"
 export default function Nav() {
   const [submenuOpen, setOpenSubmenus] = useState({
     services: false,
     UseCase: false
   })
-  const { locale, locales, push, pathname } = useRouter();
 
-  const switchLanguage = (lang) => {
-    push(pathname, pathname, { locale: lang });
-  };
+
+ 
 
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showNavbar, setShowNavbar] = useState(false);
